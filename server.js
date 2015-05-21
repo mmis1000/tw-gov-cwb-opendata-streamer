@@ -57,6 +57,10 @@ router.get('/', function(req, res, next) {
   res.render('index', {items : currentItems, types : listenTypes});
 })
 
+router.get('/backlog.json', function(req, res, next) {
+  res.jsonp(currentItems);
+})
+
 router.use(express.static(path.resolve(__dirname, 'client')));
 
 server.listen(config.port, config.ip, function(){
