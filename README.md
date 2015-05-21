@@ -9,5 +9,6 @@
 5. fire the server with `node index.js`
 
 data entries :
+
 1. `/comet/(youe listenTargets seperate by ,)`, it will return new path to fetch and probably new datas if exist
 2. `/backlog.json`, back log of the newest data fetched
