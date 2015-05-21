@@ -40,6 +40,11 @@ for (var i = 0; i < listenTypes.length; i++) {
 
 detect.on('update', function (ev) {
   currentItems.push(ev);
+  
+  if (currentItems.length > config.maxBacklog) {
+    currentItems.shift();
+  }
+  
   comet.pushData(ev.name, ev);
   
   console.log('got new (' + ev.name + ') data at ' + new Date);
