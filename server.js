@@ -54,7 +54,7 @@ router.get('/', function(req, res, next) {
 
 router.use(express.static(path.resolve(__dirname, 'client')));
 
-server.listen(process.env.PORT || 80, process.env.IP || "0.0.0.0", function(){
+server.listen(config.port, config.ip, function(){
   var addr = server.address();
   console.log("Server listening at", addr.address + ":" + addr.port);
 });

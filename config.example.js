@@ -9,5 +9,7 @@ module.exports = {
       id : 'E-A0016-001',
       interval : 30000
     }
-  }
+  },
+  port : process.env.PORT || 80,
+  ip : process.env.IP || "0.0.0.0"
 };
