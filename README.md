@@ -1,5 +1,7 @@
 ### create broadcast channel for data update from http://opendata.cwb.gov.tw/
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mmis1000/tw-gov-cwb-opendata-streamer.svg)](https://greenkeeper.io/)
+
 ####How to use
 
 1. clone the repo with either zip from web-page or git
